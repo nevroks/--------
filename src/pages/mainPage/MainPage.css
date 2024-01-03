@@ -1,0 +1,387 @@
+.header__part{
+    background: url('../../UI/uiSources/header/BGimg.jpg'), lightgray 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    padding-top: 382px;
+    min-height: 1150px;
+
+    overflow: hidden;
+    font-family: Inter, sans-serif;
+}
+.header__contentWrapper{
+    /*margin: 382px 62px 408px;*/
+    padding-bottom: 408px;
+    position: relative;
+    z-index: 2;
+
+
+}
+.header__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 20px;
+
+    position: relative;
+    z-index: 2;
+}
+.header__contentWrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: #000;
+    filter: blur(150px);
+    z-index: -1;
+}
+.header__title{
+    text-align: center;
+    max-width: 1006px;
+
+}
+.header__title span{
+    color: var(--accent-color);
+}
+.header__text{
+    color: var(--lighter-gray-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.header__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 288px;
+    height: 54px;
+
+    border-radius: 5px;
+    color: var(--white-color);
+    background: var(--accent-color);
+
+    font-size: 20px;
+    font-weight: 700;
+}
+.header__footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    padding-bottom: 40px;
+
+
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 700;
+
+    z-index: 3;
+}
+.header__part::after{
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 339px;
+
+
+    background: linear-gradient(180deg, rgba(44, 44, 44, 0.00) 0%, #2C2C2C 100%);
+
+    z-index: 1;
+}
+
+
+
+
+/*-----another section-----*/
+
+
+
+
+.typesOfOil{
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+
+    top: -6px;
+
+}
+.typesOfOil__wrapper{
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.typesOfOil__oil1{
+    z-index: 4;
+    background: url('../pageSources/mainPage/BGimg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.typesOfOil__oil1--content{
+
+    bottom: 0px;
+    right: -10px;
+
+}
+.typesOfOil__oil2{
+    z-index: 3;
+    background: url('../pageSources/mainPage/BGimg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.typesOfOil__oil2--content{
+    top: 0;
+    left: -10px;
+
+}
+.typesOfOil__oil3{
+    background: url('../pageSources/mainPage/BGimg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+
+    position: relative;
+}
+.typesOfOil__oil3--content{
+
+    right: 50%;
+    transform: translate(100%);
+
+
+
+}
+.typesOfOil__oil3--content,.typesOfOil__oil1--content,.typesOfOil__oil2--content{
+    position: absolute;
+
+    background-color: rgba(44, 44, 44, 0.80);
+    border-radius: 0px 20px 20px 0px;
+    backdrop-filter: blur(2.5px);
+
+    width: 530px;
+    height: 400px;
+
+    padding: 97px 100px 97px 80px;
+}
+.typesOfOil__oil1--content{
+    border-radius: 20px 0px 0px 20px;
+}
+.typesOfOil__oil1--content-text,.typesOfOil__oil2--content-text,.typesOfOil__oil3--content-text{
+    color: var(--lighter-gray-color);
+    font-size: 20px;
+    font-weight: 400;
+
+    margin: 15px 0 30px;
+}
+.typesOfOil__oil1--content-link,.typesOfOil__oil2--content-link,.typesOfOil__oil3--content-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: var(--accent-color);
+    height: 42px;
+}
+
+
+
+
+/*-----another section-----*/
+
+
+
+
+.neftekore{
+    margin: 50px 0 159px;
+    font-family: 'Inter', sans-serif;
+}
+.neftekore__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: rgba(45, 45, 45, 0.8) dashed 4px;
+    border-radius: 30px;
+
+    color: var(--darker-gray-color);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+
+    padding: 34px;
+    min-height: 591px;
+}
+.neftekore__wrapper h2{
+    color: var(--black-color);
+}
+.neftekore__wrapper span{
+    color: var(--accent-color);
+}
+.neftekore__header-text{
+    margin: 5px 0 19px;
+    max-width: 849px;
+
+    font-size: 24px;
+    font-weight: 400;
+}
+.neftekore__content-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+
+    margin-bottom: 30px;
+}
+.neftekore__content-list__item1,.neftekore__content-list__item2,.neftekore__content-list__item3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.neftekore__content-list__item1-text,.neftekore__content-list__item2-text,.neftekore__content-list__item3-text{
+    color: var(--darker-gray-color);
+
+    max-width: 262px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.neftekore__footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 444px;
+    height: 50px;
+
+    color: var(--accent-color);
+
+    border-radius: 5px;
+    border: 2px solid var(--accent-color);
+}
+
+.header__part::before{
+    content: url("../../generalSources/geo.png");
+
+    position: absolute;
+    right: 50%;
+    overflow: hidden;
+    transform: translate(50%,-25%);
+}
+
+
+
+@media (max-width: 1200px) {
+    .header__part {
+        min-height: 1000px;
+    }
+    .typesOfOil__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .typesOfOil__oil1,.typesOfOil__oil2,.typesOfOil__oil3{
+        width: 100%;
+        height: 960px;
+    }
+    .typesOfOil__oil3--content,.typesOfOil__oil2--content,.typesOfOil__oil1--content{
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%,-50%);
+    }
+}
+@media (max-width: 800px) {
+    .header__part {
+        min-height: 850px;
+    }
+    .header__footer{
+        padding-bottom: 20px;
+    }
+    .typesOfOil__oil3--content,.typesOfOil__oil2--content,.typesOfOil__oil1--content{
+        width: 430px;
+        height: 300px;
+        padding: 37px 45px 87px 50px;
+
+        border-radius: 20px;
+    }
+    .typesOfOil__oil1,.typesOfOil__oil2{
+        height: 489px;
+    }
+    .typesOfOil__oil3{
+        height: 599px;
+    }
+    .neftekore__content-list{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin-bottom: 30px;
+    }
+    .neftekore__footer{
+        width: 282px;
+    }
+}
+@media (max-width: 550px) {
+    .header__part {
+        min-height: 750px;
+        padding-top: 181px;
+    }
+    .header__contentWrapper{
+        padding-bottom: 127px;
+    }
+    .neftekore__wrapper{
+        padding: 20px 20px 35px 20px;
+    }
+    .neftekore__content-list__item1,.neftekore__content-list__item2,.neftekore__content-list__item3{
+        row-gap: 10px;
+    }
+
+}
+@media (max-width: 410px) {
+    .header__part {
+        min-height: 681px;
+    }
+    .typesOfOil__wrapper{
+        min-height:0;
+    }
+    .typesOfOil__oil1,.typesOfOil__oil2{
+        height: 339px;
+    }
+    .typesOfOil__oil3{
+        height: 449px;
+    }
+    .typesOfOil__oil2--content,.typesOfOil__oil1--content{
+        width: 300px;
+        height: 239px;
+        padding: 30px 25px;
+    }
+    .typesOfOil__oil1--content-text,.typesOfOil__oil2--content-text,.typesOfOil__oil3--content-text{
+        margin: 15px 0 15px;
+    }
+    .typesOfOil__oil3--content{
+        width: 300px;
+        height: 349px;
+    }
+
+
+}

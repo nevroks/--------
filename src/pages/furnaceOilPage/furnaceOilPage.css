@@ -1,0 +1,278 @@
+.FurnaceOilPage__header{
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url("../pageSources/diselOilPage/BGImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+}
+.FurnaceOilPage__header::before{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+.FurnaceOilPage__header::after{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    right: 200px;
+}
+.FurnaceOilPage__content::after{
+    content: url("../../generalSources/geo.png");
+
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(45%,-50%);
+}
+.FurnaceOilPage__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+.FurnaceOilPage__content *{
+    position: relative;
+    z-index: 3;
+}
+.FurnaceOilPage__content::before{
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 535px;
+
+    z-index: 1;
+
+    border-radius: 50px;
+    background: #000;
+    filter: blur(150px);
+}
+.FurnaceOilPage__header-title{
+    padding: 159px 0 40px;
+
+    max-width: 888px;
+    text-align: center;
+}
+.FurnaceOilPage__header-title span{
+    color: var(--accent-color);
+}
+.FurnaceOilPage__header-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 30px;
+}
+.FurnaceOilPage__header-info__content{
+    display: flex;
+    column-gap: 40px;
+}
+.FurnaceOilPage__header-info__content p{
+    padding: 10px;
+
+    border: 2px dashed #DBA833;
+    background: #242424;
+
+    color: var(--accent-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.FurnaceOilPage__header-info__text{
+    color: var(--lighter-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.FurnaceOilPage__header-info__link{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 15px 60px;
+
+    border-radius: 5px;
+    background: var(--accent-color);
+
+    margin-bottom: 128px;
+}
+.lightFuel-wrapper{
+    margin: 40px 50px 80px;
+    padding: 25px 50px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 75px;
+
+    border-radius: 40px;
+    border: 2px dashed #828282;
+}
+.lightFuel__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lightFuel__info-title{
+    color: var(--black-color);
+}
+.lightFuel__info-text{
+    color: var(--darker-gray-color);
+    font-size: 20px;
+    font-weight: 400;
+
+    margin: 10px 0 20px;
+}
+.lightFuel__info-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 2px solid var(--accent-color);
+
+    color: var(--accent-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+.scope{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-bottom: 120px;
+}
+.scope-title{
+    color: var(--black-color);
+}
+.scope-text{
+    margin: 10px 0 20px;
+
+    color: var(--darker-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.scope__img-container{
+    display: flex;
+    column-gap: 21px;
+}
+.scope__img-container img{
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+.scope__img-container__container{
+    position: relative;
+
+    display: flex;
+}
+.scope__img-container__container:nth-child(1){
+    justify-content: flex-end
+}
+.scope__img-container__container:nth-child(2){
+    justify-content: center;
+}
+.scope__img-container__container:nth-child(3){
+    justify-content: flex-start;
+}
+.scope__img-container__container::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white-color);
+
+    border: var(--accent-color) solid 3px;
+    border-radius: 10px 10px 0 0;
+
+    width: 270px;
+    height: 160px;
+
+    margin: 0 59px;
+
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.scope__img-container__container:nth-child(1)::after{
+    content: 'Для обогрева промышленных, производственных площадей';
+}
+.scope__img-container__container:nth-child(2)::after{
+    content: 'В промышленности для обеспечения работы крупных генераторов';
+}
+.scope__img-container__container:nth-child(3)::after{
+    content: 'В сельском хозяйстве, для обогрева теплиц и живодноводческих ферм';
+}
+@media (max-width: 1919px) {
+    .FurnaceOilPage__header::before{
+        display: none;
+    }
+    .FurnaceOilPage__header::after{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .scope__img-container__container::after {
+        width: 200px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .lightFuel-wrapper {
+        flex-direction: column;
+    }
+    .scope__img-container {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .scope__img-container img{
+        width: 440px;
+        height: 300px;
+    }
+    .scope__img-container__container:nth-child(1),.scope__img-container__container:nth-child(2),.scope__img-container__container:nth-child(3) {
+        justify-content: center;
+    }
+}
+@media (max-width: 550px) {
+    .lightFuel-wrapper {
+        margin: 0;
+    }
+    .lightFuel__info-link {
+        width: 100%;
+    }
+    .scope__img-container img{
+        width: 340px;
+        height: 200px;
+    }
+    .FurnaceOilPage__header-info__content {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

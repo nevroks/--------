@@ -1,0 +1,82 @@
+/*------dif pages------*/
+.MainPage .producers{
+    margin: 159px 0 112px;
+}
+.DiselOilPage .producers{
+    margin: 120px 0 140px;
+}
+.FurnaceOilPage,.ShipOilPage .producers{
+    margin-bottom: 139px;
+}
+
+
+/*------styles------*/
+
+
+.producers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+}
+.producers__title{
+    color: var(--black-color);
+}
+.producers__title span{
+    color: var(--accent-color);
+}
+.producers__text{
+    color: var(--darker-gray-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+
+    margin: 5px 0 30px;
+}
+.producers__list{
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
+}
+.producers__list-item1{
+    position: relative;
+    top: -9px;
+}
+.producers__list-item2{
+    position: relative;
+    top: -3px;
+}
+.producers__list-item3{
+    position: relative;
+    top: -8px;
+}
+@media (max-width: 550px) {
+    .producers__title{
+        font-size: 27px;
+    }
+    .producers__list{
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        padding-bottom: 10px;
+    }
+    .producers__list::-webkit-scrollbar {
+        height: 5px;
+        border-radius: 29px;
+        background: #D9D9D9;
+    }
+
+    /* ползунок скроллбара */
+    .producers__list::-webkit-scrollbar-thumb {
+        border-radius: 29px;
+        background: #DBA833;
+    }
+    .producers__list a,.producers__list li{
+        display: contents;
+    }
+}

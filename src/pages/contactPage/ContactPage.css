@@ -1,0 +1,172 @@
+.ContactPage__header{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("../pageSources/diselOilPage/BGImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+}
+.ContactPage__header *{
+    position: relative;
+    z-index: 3;
+}
+.ContactPage__header-Bg::before{
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 254px;
+
+    z-index: 1;
+
+    border-radius: 50px;
+    background: #000;
+    filter: blur(150px);
+}
+.ContactPage__header-wrapper{
+    margin: 195px 0 134px;
+    text-align: center;
+}
+.ContactPage__header-title{
+    margin-bottom: 15px;
+}
+.ContactPage__header-text{
+    color: var(--lighter-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.cta-wrapper{
+    margin: 60px 0 80px;
+
+    position: relative;
+
+    border-radius: 41px;
+    border: 3px dashed var(--accent-color);
+    background: #FFF;
+
+    padding: 57px 136px 57px 72px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.cta-form{
+    padding: 23px 40px 36px;
+
+    border-radius: 28px;
+    border: 2px solid var(--gray-color);
+    background: #F8F8F8;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.cta-form div{
+    display: flex;
+    column-gap: 10px;
+}
+.cta-form input{
+    border-radius: 5px;
+    border: 2px solid var(--black-color);
+
+    padding: 10px;
+}
+.cta-form input:focus{
+    background-color: var(--white-color);
+    transition: 0.5s;
+}
+.cta-form__title{
+    font-size: 36px;
+    font-weight: 600;
+}
+.cta-form__button{
+    padding: 10px;
+
+    color: var(--accent-color);
+
+    border-radius: 5px;
+    border: 2px solid var(--accent-color);
+    backdrop-filter: blur(2px);
+}
+.cta-info{
+    display: flex;
+    flex-direction: column;
+}
+.cta-info p{
+    padding: 15px 0;
+
+    border-bottom: var(--gray-color) 1px solid;
+
+    color: var(--darker-gray-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.cta-info p:first-child{
+    padding-top: 0px;
+}
+.cta-info p:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.cta::before{
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+
+    display: block;
+    width: 1394px;
+    height: 759px;
+
+    right: 50%;
+    transform: translate(50%,-18%);
+
+    border-radius: 100%;
+    background: #F8F8F8;
+}
+@media (max-width: 1400px) {
+    .cta::before{
+        display: none;
+    }
+}
+@media(max-width: 1200px){
+    .cta-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 57px 72px;
+    }
+}
+@media (max-width: 800px) {
+    .cta-form {
+        padding: 20px;
+
+        row-gap: 15px;
+    }
+    .cta-form__title {
+        font-size: 27px !important;
+    }
+}
+@media (max-width: 550px) {
+    .cta-wrapper {
+        padding: 20px 10px;
+    }
+    .cta-form {
+        padding: 20px 10px;
+        row-gap: 10px;
+        width: 100%;
+    }
+    .cta-form div {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+

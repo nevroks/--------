@@ -1,0 +1,203 @@
+.DiselOilPage__header{
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url("../pageSources/diselOilPage/BGImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+}
+.DiselOilPage__header::before{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+.DiselOilPage__header::after{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    right: 200px;
+}
+.DiselOilPage__content::after{
+    content: url("../../generalSources/geo.png");
+
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(45%,-50%);
+}
+.DiselOilPage__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+.DiselOilPage__content *{
+    z-index: 3;
+}
+.DiselOilPage__content::before{
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 70%;
+
+    z-index: 1;
+
+    border-radius: 50px;
+    background: #000;
+    filter: blur(150px);
+}
+.DiselOilPage__header-title{
+    padding: 159px 0 40px;
+
+    max-width: 826px;
+    text-align: center;
+}
+.DiselOilPage__header-title span{
+    color: var(--accent-color);
+}
+.DiselOilPage__header-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 30px;
+}
+.DiselOilPage__header-info__content{
+    display: flex;
+    column-gap: 40px;
+}
+.DiselOilPage__header-info__content p{
+    padding: 10px;
+
+    border: 2px dashed #DBA833;
+    background: #242424;
+
+    color: var(--accent-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.DiselOilPage__header-info__text{
+    color: var(--lighter-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.DiselOilPage__header-info__link{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 15px 60px;
+
+    border-radius: 5px;
+    background: var(--accent-color);
+
+    margin-bottom: 128px;
+}
+.typesOfDiselOil__list{
+    padding: 36px 50px 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    font-family: 'Inter', sans-serif;
+}
+.typesOfDiselOil__list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    border: var(--lighter-gray-color) 2px dashed;
+    border-radius: 40px;
+
+    padding: 20px 79px 20px 50px;
+}
+.typesOfDiselOil__list-item__info-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+
+    text-align: center;
+}
+.typesOfDiselOil__list-item__info-container h3{
+    color: var(--black-color);
+}
+.typesOfDiselOil__list-item__info-container p{
+    max-width: 580px;
+
+    color: var(--darker-gray-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+.typesOfDiselOil__list-item__info-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 50px;
+
+    color: var(--accent-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 5px;
+    border: 2px solid #DBA833;
+}
+@media (max-width: 1919px) {
+    .DiselOilPage__header::before{
+        display: none;
+    }
+    .DiselOilPage__header::after{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .typesOfDiselOil__list-item {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 69px 20px 40px;
+    }
+}
+@media (max-width: 550px) {
+    .DiselOilPage__header-info__content {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .DiselOilPage__header-info__link {
+        margin-bottom: 45px;
+    }
+
+    .typesOfDiselOil__list-item {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .typesOfDiselOil__list-item__info-container {
+        width: 100%;
+    }
+    .typesOfDiselOil__list-item__info-container a {
+        width: 100%;
+    }
+    .typesOfDiselOil__list {
+        padding: 0;
+    }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Нефтекор</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1bb536c1-d410-4ef6-8d32-15beb4b941f9&lang=ru_RU" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script type="module" src="/src/main.jsx">
+
+    </script>
+    <script type="text/javascript">
+      // Функция ymaps.ready() будет вызвана, когда
+      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+      ymaps.ready(init);
+      function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+          center: [55.751574, 37.573856],
+          zoom: 9
+        });
+      }
+    </script>
+  </body>
+</html>

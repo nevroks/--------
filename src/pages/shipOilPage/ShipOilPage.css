@@ -1,0 +1,250 @@
+.ShipOilPage__header{
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url("../pageSources/diselOilPage/BGImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+}
+.ShipOilPage__header::before{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+.ShipOilPage__header::after{
+    content: url("../../generalSources/Arrow.png");
+
+    position: absolute;
+    top: 105px;
+    right: 200px;
+}
+.ShipOilPage__content::after{
+    content: url("../../generalSources/geo.png");
+
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(45%,-50%);
+}
+.ShipOilPage__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+.ShipOilPage__content *{
+    z-index: 3;
+}
+
+.ShipOilPage__content::before{
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 535px;
+
+    z-index: 1;
+
+    border-radius: 50px;
+    background: #000;
+    filter: blur(150px);
+}
+.ShipOilPage__header-title{
+    padding: 159px 0 40px;
+
+    max-width: 1004px;
+    text-align: center;
+}
+.ShipOilPage__header-title span{
+    color: var(--accent-color);
+}
+.ShipOilPage__header-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 30px;
+}
+.ShipOilPage__header-info__content{
+    display: flex;
+    column-gap: 40px;
+}
+.ShipOilPage__header-info__content p{
+    padding: 10px;
+
+    border: 2px dashed #DBA833;
+    background: #242424;
+
+    color: var(--accent-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.ShipOilPage__header-info__text{
+    color: var(--lighter-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.ShipOilPage__header-info__link{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 15px 60px;
+
+    border-radius: 5px;
+    background: var(--accent-color);
+
+    margin-bottom: 128px;
+}
+.uWillGet{
+    margin: 70px 0 80px;
+}
+.uWillGet-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 70px 110px 80px;
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 20px;
+    border: 3px dashed var(--accent-color);
+}
+.uWillGet-title{
+    color: var(--black-color);
+}
+.provider{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../pageSources/shipOilPage/BGImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+
+    height: 450px;
+
+    margin-bottom: 130px;
+}
+.provider::before{
+    content: '';
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: linear-gradient(180deg, #000 10.42%, rgba(0, 0, 0, 0.09) 79.69%, rgba(0, 0, 0, 0.00) 100%);
+
+    height: 170px;
+    width: 100%;
+
+    display: block;
+    z-index: 1;
+}
+.provider::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    background: linear-gradient(360deg, #000 10.42%, rgba(0, 0, 0, 0.09) 79.69%, rgba(0, 0, 0, 0.00) 100%);
+
+    height: 170px;
+    width: 100%;
+
+    display: block;
+    z-index: 1;
+}
+.provider-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    position: relative;
+    z-index: 3;
+}
+.provider-wrapper::before{
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: -1;
+
+    border-radius: 50px;
+    background: #000;
+    filter: blur(80px);
+}
+.provider-text{
+    margin: 15px 0 20px;
+
+    color: var(--lighter-gray-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+.provider-link{
+    padding: 15px 60px;
+
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 5px;
+    background: var(--accent-color);
+}
+@media (max-width: 1919px) {
+    .ShipOilPage__header::before{
+        display: none;
+    }
+    .ShipOilPage__header::after{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .ShipOilPage__header-info__content {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .ShipOilPage__header-info__link {
+        margin-bottom: 45px;
+    }
+}
+@media (max-width: 550px){
+    .uWillGet-wrapper {
+        margin: 0;
+        padding: 15px 7px 15px 7px;
+    }
+    .provider-wrapper {
+        padding: 20px 5px;
+    }
+    .provider-wrapper::before {
+        width: 320px;
+        height: 150px;
+        filter: blur(50px);
+    }
+
+}
